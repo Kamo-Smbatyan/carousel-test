@@ -49,7 +49,9 @@ export default function CarsSlides() {
                   <CardContent className="flex gap-2 flex-col justify-center items-center aspect-square items-center justify-center p-6">
                     <img
                       src={
-                        item instanceof Object && "image" in item && item.image
+                        item instanceof Object && "image" in item
+                          ? item.image
+                          : undefined
                       }
                       alt="car logo"
                       width={"80em"}
