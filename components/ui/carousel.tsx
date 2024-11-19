@@ -84,10 +84,6 @@ const Carousel = React.forwardRef<
 
     const scrollNext = React.useCallback(() => {
       api?.scrollNext();
-
-      // if (!api) return;
-      // const nextIndex = api.selectedScrollSnap() + api.scrollSnapList().length / 4; // Adjust length / 4 based on visible items
-      // api.scrollTo(nextIndex);
     }, [api]);
 
     const handleKeyDown = React.useCallback(
